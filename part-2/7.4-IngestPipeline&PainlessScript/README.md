@@ -98,6 +98,56 @@ POST _ingest/pipeline/_simulate
     ]
 }
 
+POST _ingest/pipeline/_simulate
+{
+	"pipeline": {
+		"description": "to split blog tags",
+		"processors": [
+			{
+				"split": {
+					"field": "tags",
+					"separator": ","
+				}
+			},
+			{
+				"set": {
+					"field": "received",
+					"value": "{{_ingest.timestamp}}"
+				}
+			},
+			{
+				"date": {
+					"field": "received",
+					"formats": [
+						"ISO8601"
+					],
+					"target_field": "timestamp",
+					"timezone": "Asia/Shanghai"
+				}
+			}
+		]
+	},
+	"docs": [
+		{
+			"_index": "index",
+			"_id": "id",
+			"_source": {
+				"title": "Introducing big data......",
+				"tags": "hadoop,elasticsearch,spark",
+				"content": "You konw, for big data"
+			}
+		},
+		{
+			"_index": "index",
+			"_id": "idxx",
+			"_source": {
+				"title": "Introducing cloud computering",
+				"tags": "openstack,k8s",
+				"content": "You konw, for cloud"
+			}
+		}
+	]
+}
 
 
 # 为ES添加一个 Pipeline

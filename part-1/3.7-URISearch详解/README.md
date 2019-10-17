@@ -101,3 +101,4 @@ GET /movies/_search?q=title:"Lord Rings"~2
 ## 相关阅读
 - https://www.elastic.co/guide/en/elasticsearch/reference/7.0/search-uri-request.html
 - https://www.elastic.co/guide/en/elasticsearch/reference/7.0/search-search.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html

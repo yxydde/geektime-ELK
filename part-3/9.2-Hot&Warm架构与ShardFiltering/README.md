@@ -100,3 +100,6 @@ GET _cluster/allocation/explain?pretty
 ## 相关阅读
 - https://www.elastic.co/cn/blog/sizing-hot-warm-architectures-for-logging-and-metrics-in-the-elasticsearch-service-on-elastic-cloud
 - https://www.elastic.co/cn/blog/deploying-a-hot-warm-logging-cluster-on-the-elasticsearch-service
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.3/shard-allocation-filtering.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.3/allocation-awareness.html
+

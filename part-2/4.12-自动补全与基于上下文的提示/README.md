@@ -94,3 +94,7 @@ POST comments/_search
   }
 }
 ```
+
+## 相关阅读
+
+https://www.elastic.co/guide/en/elasticsearch/reference/7.3/search-suggesters.html#completion-suggester

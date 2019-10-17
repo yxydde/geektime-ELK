@@ -113,3 +113,4 @@ DELETE dynamic_mapping_test
 
 ## 相关阅读
 - https://www.elastic.co/guide/en/elasticsearch/reference/7.1/dynamic-mapping.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.3/dynamic.html
