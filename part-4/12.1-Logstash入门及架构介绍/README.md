@@ -31,4 +31,9 @@ Exception in thread "main" java.lang.NullPointerException
 # 一个实例
 https://github.com/onebirdrocks/geektime-ELK/blob/master/part-1/2.4-Logstash%E5%AE%89%E8%A3%85%E4%B8%8E%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE/movielens/logstash.conf
 
+#多 Pipelines 实例
+When you start Logstash without arguments, it will read the pipelines.yml file and instantiate all pipelines specified in the file. On the other hand, when you use -e or -f, Logstash ignores the pipelines.yml file and logs a warning about it.
+
+https://www.elastic.co/guide/en/logstash/7.2/multiple-pipelines.html
+
 ```
