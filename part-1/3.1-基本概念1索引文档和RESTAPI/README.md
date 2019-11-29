@@ -17,7 +17,14 @@ POST kibana_sample_data_ecommerce/_search
 }
 
 #_cat indices API
-#查看indices
+
+#查看所有 index
+GET /_cat/indices?v
+
+# JSON格式返回结果
+GET /_cat/indices?v&format=json
+
+#查看indices，按 index 名称排序
 GET /_cat/indices/kibana*?v&s=index
 
 #查看状态为绿的索引
@@ -37,5 +44,6 @@ GET /_cat/indices?v&h=i,tm&s=tm:desc
 
 ## 相关阅读
 - 为什么不再支持单个Index下，多个Tyeps https://www.elastic.co/cn/blog/moving-from-types-to-typeless-apis-in-elasticsearch-7-0
-- CAT Index API https://www.elastic.co/guide/en/elasticsearch/reference/7.1/cat-indices.html
+- CAT Index API https://www.elastic.co/guide/en/elasticsearch/reference/7.4/cat-indices.html
 - https://www.elastic.co/guide/en/elasticsearch/reference/7.4/indices.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.4/search-count.html

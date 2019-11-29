@@ -10,6 +10,11 @@ POST users/_doc
     "message" : "trying out Kibana"
 }
 
+GET users
+GET users/_mapping
+# 获取 users 默认设置
+GET users/_settings?include_defaults=true&flat_settings
+
 #create document. 指定Id。如果id已经存在，报错
 PUT users/_doc/1?op_type=create
 {
@@ -38,7 +43,6 @@ GET users/_doc/1
 PUT users/_doc/1
 {
 	"user" : "Mike"
-
 }
 
 
@@ -157,4 +161,5 @@ DELETE test2
 
 
 ## 相关阅读
-- Document API https://www.elastic.co/guide/en/elasticsearch/reference/7.1/docs.html
+- Document API https://www.elastic.co/guide/en/elasticsearch/reference/7.4/docs-index_.html
+- Bulk API  https://www.elastic.co/guide/en/elasticsearch/reference/7.4/docs-bulk.html
