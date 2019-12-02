@@ -39,8 +39,6 @@ POST /users/_search
 }
 
 
-
-
 #设定Null_value
 
 DELETE users
@@ -75,7 +73,6 @@ PUT users/_doc/2
 {
   "firstName":"Ruan2",
   "lastName": "Yiming2"
-
 }
 
 GET users/_search
@@ -128,7 +125,9 @@ POST users/_search
 }
 
 
-#数组类型
+# 数组类型
+# In Elasticsearch, there is no dedicated array datatype. 
+# Any field can contain zero or more values by default
 PUT users/_doc/1
 {
   "name":"onebird",
@@ -154,4 +153,4 @@ GET users/_mapping
 
 
 ## 补充阅读
-- Mapping Parameters https://www.elastic.co/guide/en/elasticsearch/reference/7.1/mapping-params.html
+- Mapping Parameters https://www.elastic.co/guide/en/elasticsearch/reference/7.4/mapping-params.html

@@ -66,6 +66,11 @@ GET /movies/_search?q=title:(Beautiful NOT Mind)
 	"profile":"true"
 }
 
+GET /kibana_sample_data_ecommerce/_search?q=category:(Man's -Women's +Accessories)
+{
+	"profile":"true"
+}
+
 # 查找美丽心灵
 GET /movies/_search?q=title:(Beautiful %2BMind)
 {

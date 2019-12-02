@@ -142,5 +142,5 @@ GET my_index/_search?q=full_name:John
 ```
 
 ## 相关阅读
-- Index Templates https://www.elastic.co/guide/en/elasticsearch/reference/7.1/indices-templates.html
-- Dynamic Template https://www.elastic.co/guide/en/elasticsearch/reference/7.1/dynamic-mapping.html
+- Index Templates https://www.elastic.co/guide/en/elasticsearch/reference/7.4/indices-templates.html
+- Dynamic Template https://www.elastic.co/guide/en/elasticsearch/reference/7.4/dynamic-mapping.html

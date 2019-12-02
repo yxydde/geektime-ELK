@@ -94,3 +94,5 @@ GET _analyze
 ```
 
 ## 相关阅读
+
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.4/analysis-custom-analyzer.html
