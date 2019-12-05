@@ -133,5 +133,14 @@ POST groups/_search
 }
 ```
 ## 相关阅读
-- https://www.elastic.co/guide/en/elasticsearch/reference/7.1/term-level-queries.html
-- https://www.elastic.co/guide/en/elasticsearch/reference/7.1/full-text-queries.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.4/term-level-queries.html
+
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.4/full-text-queries.html
+
+- Index Settings 
+
+  https://www.elastic.co/guide/en/elasticsearch/reference/7.4/indices-get-settings.html
+
+- Standard Analyzer [Default]
+
+   https://www.elastic.co/guide/en/elasticsearch/reference/7.4/analysis-standard-analyzer.html
