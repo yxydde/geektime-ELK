@@ -44,6 +44,8 @@ POST /testscore/_search
   }
 }
 
+## boosting 查询包括 positive 、negative 和 negative_ boost 三个部分， positive 中的查询评分保持不变，
+## negative 中的查询会降低文档评分， negative_boost 指明 negative 中降低的权值。
 POST testscore/_search
 {
     "query": {
@@ -82,3 +84,10 @@ POST tmdb/_search
 
 
 ```
+
+# 相关阅读
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-boosting-query.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/index-modules-similarity.html
+https://www.elastic.co/cn/blog/practical-bm25-part-1-how-shards-affect-relevance-scoring-in-elasticsearch
+https://www.elastic.co/cn/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables
+https://www.elastic.co/cn/blog/practical-bm25-part-3-considerations-for-picking-b-and-k1-in-elasticsearch

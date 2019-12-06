@@ -1,6 +1,13 @@
 # Query & Filtering 与多字符串多字段查询
 
 ## 课程demo
+
+bool 查询可以把任意多个简单查询组合在一起，使用must 、should 、must not 、filter 选项来表示简单查询之间的逻辑，每个选项都可以出现0 次到多次，它们的含义如下：
+* must 文档必须匹配 must 选项下的查询条件，相当于逻辑运算的 AND 。
+* should 文档可以匹配 should 选项下的查询条件也可以不匹配，相当于逻辑运算的 OR 。
+* must not 与 must 相反，匹配该选项下的查询条件的文档不会被返回。
+* filter 和 must 一样，匹配 filter 选项下的查询条件的文档才会被返回，但是filter 不评分，只起到过滤功能。
+
 ```
 POST /products/_bulk
 { "index": { "_id": 1 }}
@@ -301,5 +308,6 @@ POST news/_search
 
 ```
 ## 相关阅读
-- https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html
-- https://www.elastic.co/guide/en/elasticsearch/reference/7.1/query-dsl-boosting-query.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-bool-query.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-filter-context.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-boosting-query.html

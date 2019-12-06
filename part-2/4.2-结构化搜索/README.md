@@ -305,5 +305,7 @@ POST products/_search
 
 ```
 ## 相关阅读
-https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-exists-query.html
-https://www.elastic.co/guide/en/elasticsearch/reference/7.1/term-level-queries.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-exists-query.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/term-level-queries.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/compound-queries.html
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-constant-score-query.html
