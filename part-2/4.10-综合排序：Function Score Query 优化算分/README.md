@@ -113,4 +113,4 @@ POST /blogs/_search
 }
 ```
 ## 相关阅读
-- https://www.elastic.co/guide/en/elasticsearch/reference/7.1/query-dsl-function-score-query.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.5/query-dsl-function-score-query.html

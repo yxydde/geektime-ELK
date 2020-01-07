@@ -121,3 +121,5 @@ POST  temp_users/_search
     ]
 }
 ```
+
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/mapping-params.html

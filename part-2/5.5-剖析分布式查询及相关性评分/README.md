@@ -61,3 +61,5 @@ POST message/_search?search_type=dfs_query_then_fetch
 }
 
 ```
+
+https://www.elastic.co/guide/cn/elasticsearch/guide/current/relevance-is-broken.html
