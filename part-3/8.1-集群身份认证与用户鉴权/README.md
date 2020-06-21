@@ -13,6 +13,10 @@ discovery.type: single-node
 #启动单节点
 bin/elasticsearch -E node.name=node0 -E cluster.name=geektime -E path.data=node0_data -E http.port=9200 -E xpack.security.enabled=true
 
+# vi config/elasticsearch.yml 
+xpack.security.enabled: true
+xpack.security.authc.api_key.enabled: true
+
 #使用Curl访问ES，或者浏览器访问 “localhost:9200/_cat/nodes?pretty”。返回401错误
 curl 'localhost:9200/_cat/nodes?pretty'
 
@@ -63,4 +67,5 @@ POST orders/_bulk
 ```
 
 ## 相关阅读
-- https://www.elastic.co/guide/en/elasticsearch/reference/7.1/configuring-security.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.8/configuring-security.html
+- https://www.elastic.co/guide/en/elasticsearch/reference/7.8/security-api-create-api-key.html
